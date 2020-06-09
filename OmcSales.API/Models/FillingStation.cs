@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace OilBackend.Models
+namespace OmcSales.API.Models
 {
     public class FillingStation
     {
@@ -11,14 +11,14 @@ namespace OilBackend.Models
 
         public FillingStation()
         {
-            Products = new List<Product>();
+            ProductStations = new List<ProductStation>();
             Pumps = new List<Pump>();
         }
         public string Name { get; set; }
         public string Location { get; set; }
 
 
-        public List<Product> Products { get; set; }
+        public List<ProductStation> ProductStations { get; set; }
         public List<Pump> Pumps { get; set; }
     }
 }

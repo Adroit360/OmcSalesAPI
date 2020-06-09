@@ -26,5 +26,7 @@
     <Folder Include="Helpers\" />
     <Folder Include="Helpers\AutoMapper\" />
     <Folder Include="Helpers\DTOs\" />
+    <Folder Include="Helpers\Enums\" />
+    <Folder Include="Services\" />
   </ItemGroup>
 </Project>

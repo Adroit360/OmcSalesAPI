@@ -1,7 +1,6 @@
 ﻿using System;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using OilBackend.Models;
 
 namespace OmcSales.API.Models
 {
@@ -18,5 +17,6 @@ namespace OmcSales.API.Models
         public DbSet<Tank> Tank { get; set; }
         public DbSet<Pump> Pump { get; set; }
         public DbSet<ProductBank> ProductBank { get; set; }
+        public DbSet<ProductStation> ProductStations { get; set; }
     }
 }

@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace OilBackend.Models
+namespace OmcSales.API.Models
 {
     public class Nozzle
     {

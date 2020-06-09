@@ -8,6 +8,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using OmcSales.API.Helpers;
 using OmcSales.API.Models;
+using OmcSales.API.Services;
 
 namespace OmcSales.API
 {
@@ -38,7 +39,7 @@ namespace OmcSales.API
 
             //Add Microsoft.AspNetCore.Identity.UI
             //Add Microsoft.AspNetCore.Identity.EntityFrameworkCore for EntityFrameworkStores
-
+            services.AddScoped<MiscService>();
             services.AddAutoMapper(typeof(Startup));
 
             services.AddControllers(options => options.EnableEndpointRouting = true).AddNewtonsoftJson(options =>
