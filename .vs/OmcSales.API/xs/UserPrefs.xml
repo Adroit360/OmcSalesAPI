@@ -1,15 +1,31 @@
 ﻿<Properties StartupConfiguration="{21867567-8E76-402C-B0C4-7D6680B7DD20}|Default">
-  <MonoDevelop.Ide.ItemProperties.OmcSales.API FirstBuild="True" PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="OmcSales.API/Startup.cs">
+  <MonoDevelop.Ide.ItemProperties.OmcSales.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="OmcSales.API/Controllers/HelperController.cs">
     <Files>
-      <File FileName="OmcSales.API/Startup.cs" Line="1" Column="1" />
+      <File FileName="OmcSales.API/Models/Pump.cs" Line="15" Column="1" IsPinned="True" />
+      <File FileName="OmcSales.API/Startup.cs" Line="43" Column="1" />
+      <File FileName="OmcSales.API/Models/ApplicationUser.cs" Line="16" Column="2" />
+      <File FileName="OmcSales.API/Helpers/DbInitializer.cs" Line="39" Column="14" />
+      <File FileName="OmcSales.API/Models/ApplicationDbContext.cs" Line="19" Column="46" />
+      <File FileName="OmcSales.API/Models/Nozzle.cs" Line="13" Column="43" />
+      <File FileName="OmcSales.API/Models/NozzleValue.cs" Line="16" Column="42" />
+      <File FileName="OmcSales.API/Models/ProductBank.cs" Line="7" Column="1" />
+      <File FileName="OmcSales.API/appsettings.json" Line="3" Column="39" />
+      <File FileName="OmcSales.API/Controllers/AuthController.cs" Line="17" Column="25" />
+      <File FileName="OmcSales.API/Helpers/AutoMapper/AutoMapperProfile.cs" Line="10" Column="13" />
+      <File FileName="OmcSales.API/Program.cs" Line="16" Column="1" />
+      <File FileName="OmcSales.API/Controllers/HelperController.cs" Line="14" Column="16" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="OmcSales.API" expanded="True">
             <Node name="OmcSales.API" expanded="True">
-              <Node name="Startup.cs" selected="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="HelperController.cs" selected="True" />
+              </Node>
+              <Node name="Helpers" expanded="True" />
+              <Node name="Models" expanded="True" />
             </Node>
           </Node>
         </State>
