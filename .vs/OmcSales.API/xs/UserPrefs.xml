@@ -5,13 +5,7 @@
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Option id="ShowAllFiles" value="True" />
-          <Node name="OmcSales.API" expanded="True">
-            <Node name="OmcSales.API" expanded="True">
-              <Node name="Models" expanded="True">
-                <Node name="Product.cs" selected="True" />
-              </Node>
-            </Node>
-          </Node>
+          <Node name="OmcSales.API" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
