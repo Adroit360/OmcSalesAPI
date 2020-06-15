@@ -30,12 +30,16 @@ namespace OmcSales.API
 
             services.AddDefaultIdentity<ApplicationUser>(options =>
             {
-                options.SignIn.RequireConfirmedAccount = true;
+                options.SignIn.RequireConfirmedAccount = false;
                 options.Password.RequireDigit = false;
                 options.Password.RequireNonAlphanumeric = false;
                 options.Password.RequireUppercase = false;
                 options.Password.RequireLowercase = false;
             }).AddRoles<IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>();
+
+            var appSettingsSection = Configuration.GetSection("AppSettings");
+
+            services.Configure<AppSettings>(appSettingsSection);
 
             //Add Microsoft.AspNetCore.Identity.UI
             //Add Microsoft.AspNetCore.Identity.EntityFrameworkCore for EntityFrameworkStores
@@ -58,7 +62,7 @@ namespace OmcSales.API
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
 
             app.UseRouting();
 

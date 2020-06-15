@@ -1,0 +1,52 @@
+﻿<Properties StartupConfiguration="{21867567-8E76-402C-B0C4-7D6680B7DD20}|Default">
+  <MonoDevelop.Ide.ItemProperties.OmcSales.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="OmcSales.API/Helpers/DTOs/PumpDTO.cs">
+    <Files>
+      <File FileName="OmcSales.API/Controllers/StationsController.cs" Line="178" Column="32" />
+      <File FileName="OmcSales.API/Helpers/DTOs/FillingStationDTO.cs" Line="18" Column="1" />
+      <File FileName="OmcSales.API/Models/FillingStation.cs" Line="21" Column="24" />
+      <File FileName="OmcSales.API/Helpers/AutoMapper/AutoMapperProfile.cs" Line="16" Column="30" />
+      <File FileName="OmcSales.API/Models/ApplicationDbContext.cs" Line="18" Column="43" />
+      <File FileName="OmcSales.API/Helpers/DTOs/NozzleDTO.cs" Line="12" Column="40" />
+      <File FileName="OmcSales.API/Models/Nozzle.cs" Line="21" Column="40" />
+      <File FileName="OmcSales.API/Controllers/ProductsController.cs" Line="28" Column="1" />
+      <File FileName="OmcSales.API/Models/Product.cs" Line="1" Column="1" />
+      <File FileName="OmcSales.API/Models/ProductStation.cs" Line="6" Column="18" />
+      <File FileName="OmcSales.API/Models/NozzleValue.cs" Line="17" Column="33" />
+      <File FileName="OmcSales.API/Models/Pump.cs" Line="1" Column="1" />
+      <File FileName="OmcSales.API/Models/Tank.cs" Line="21" Column="2" />
+      <File FileName="OmcSales.API/Helpers/DTOs/PumpDTO.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="OmcSales.API" expanded="True">
+            <Node name="Solution Items" expanded="True" />
+            <Node name="OmcSales.API" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Helpers" expanded="True">
+                <Node name="DTOs" expanded="True">
+                  <Node name="PumpDTO.cs" selected="True" />
+                </Node>
+              </Node>
+              <Node name="Models" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/adriot/Desktop/Development/projects/Asp.net/WebApi/OmcSales.API/OmcSales.API/Controllers/StationsController.cs" relfile="OmcSales.API/Controllers/StationsController.cs" line="73" column="1" />
+      <Breakpoint file="/Users/adriot/Desktop/Development/projects/Asp.net/WebApi/OmcSales.API/OmcSales.API/Controllers/StationsController.cs" relfile="OmcSales.API/Controllers/StationsController.cs" line="88" column="1" />
+      <Breakpoint file="/Users/adriot/Desktop/Development/projects/Asp.net/WebApi/OmcSales.API/OmcSales.API/Controllers/StationsController.cs" relfile="OmcSales.API/Controllers/StationsController.cs" line="165" column="1" />
+      <Breakpoint file="/Users/adriot/Desktop/Development/projects/Asp.net/WebApi/OmcSales.API/OmcSales.API/Controllers/StationsController.cs" relfile="OmcSales.API/Controllers/StationsController.cs" line="180" column="1" />
+      <Breakpoint file="/Users/adriot/Desktop/Development/projects/Asp.net/WebApi/OmcSales.API/OmcSales.API/Controllers/StationsController.cs" relfile="OmcSales.API/Controllers/StationsController.cs" line="198" column="1" />
+      <Breakpoint file="/Users/adriot/Desktop/Development/projects/Asp.net/WebApi/OmcSales.API/OmcSales.API/Controllers/StationsController.cs" relfile="OmcSales.API/Controllers/StationsController.cs" line="215" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -8,6 +8,9 @@ namespace OmcSales.API.Models
         public ApplicationUser()
         {
         }
+
+        public string Name { get; set; }
+
         public string Token { get; set; }
 
         //String Array of products from product bank
