@@ -1,10 +1,12 @@
 ﻿<Properties StartupConfiguration="{21867567-8E76-402C-B0C4-7D6680B7DD20}|Default">
   <MonoDevelop.Ide.ItemProperties.OmcSales.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="OmcSales.API/Models/FillingStation.cs">
+    <Files>
+      <File FileName="OmcSales.API/Models/FillingStation.cs" Line="19" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Option id="ShowAllFiles" value="True" />
           <Node name="OmcSales.API" expanded="True" selected="True" />
         </State>
       </Pad>
