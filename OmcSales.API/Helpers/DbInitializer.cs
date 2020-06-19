@@ -8,11 +8,11 @@ namespace OmcSales.API.Helpers
     public static class DbInitializer
     {
 
-        public static void Seed(UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager,ApplicationDbContext dbContext)
+        public static void Seed(UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager, ApplicationDbContext dbContext)
         {
             //I'm bombing here
 
-            var roles = new string[] { "admin","manager"};
+            var roles = new string[] { "admin", "manager" };
 
             foreach (var role in roles)
             {
@@ -25,13 +25,13 @@ namespace OmcSales.API.Helpers
 
             }
 
-            var products = new string[] { "AGO", "PMS","KERO","GAS"};
+            var products = new string[] { "AGO", "PMS", "KERO", "GAS" };
 
-            foreach(var product in products)
+            foreach (var product in products)
             {
-                if(dbContext.ProductBank.Where(i => i.ProductName == product).Count() < 1)
+                if (dbContext.ProductBanks.Where(i => i.ProductName == product).Count() < 1)
                 {
-                    dbContext.ProductBank.Add(new ProductBank
+                    dbContext.ProductBanks.Add(new ProductBank
                     {
                         ProductName = product
                     });

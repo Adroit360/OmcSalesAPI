@@ -8,6 +8,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using OmcSales.API.Helpers;
 using OmcSales.API.Models;
+using OmcSales.API.Services;
 
 namespace OmcSales.API
 {
@@ -23,22 +24,31 @@ namespace OmcSales.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
             services.AddDbContext<ApplicationDbContext>(options =>
-               options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
+              options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
+
+
+            //services.AddDbContext<ApplicationDbContext>(options =>
+            //   options.UseSqlServer(Configuration.GetConnectionString("GearHost")));
 
 
             services.AddDefaultIdentity<ApplicationUser>(options =>
             {
-                options.SignIn.RequireConfirmedAccount = true;
+                options.SignIn.RequireConfirmedAccount = false;
                 options.Password.RequireDigit = false;
                 options.Password.RequireNonAlphanumeric = false;
                 options.Password.RequireUppercase = false;
                 options.Password.RequireLowercase = false;
             }).AddRoles<IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>();
 
+            var appSettingsSection = Configuration.GetSection("AppSettings");
+
+            services.Configure<AppSettings>(appSettingsSection);
+
             //Add Microsoft.AspNetCore.Identity.UI
             //Add Microsoft.AspNetCore.Identity.EntityFrameworkCore for EntityFrameworkStores
-
+            services.AddScoped<MiscService>();
             services.AddAutoMapper(typeof(Startup));
 
             services.AddControllers(options => options.EnableEndpointRouting = true).AddNewtonsoftJson(options =>
@@ -57,7 +67,7 @@ namespace OmcSales.API
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
 
             app.UseRouting();
 

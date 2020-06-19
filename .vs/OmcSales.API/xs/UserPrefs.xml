@@ -1,18 +1,22 @@
 ﻿<Properties StartupConfiguration="{21867567-8E76-402C-B0C4-7D6680B7DD20}|Default">
   <MonoDevelop.Ide.ItemProperties.OmcSales.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="OmcSales.API/Models/ApplicationDbContext.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="OmcSales.API/Startup.cs">
     <Files>
-      <File FileName="OmcSales.API/Models/FillingStation.cs" Line="10" Column="25" />
-      <File FileName="OmcSales.API/Models/ApplicationDbContext.cs" Line="1" Column="1" />
+      <File FileName="OmcSales.API/Controllers/DailySalesController.cs" Line="24" Column="10" />
+      <File FileName="OmcSales.API/Helpers/DTOs/DailySalesDTO.cs" />
+      <File FileName="OmcSales.API/Controllers/StationsController.cs" />
+      <File FileName="OmcSales.API/Helpers/DTOs/StatisticsDTO.cs" />
+      <File FileName="OmcSales.API/Controllers/StatisticsController.cs" />
+      <File FileName="OmcSales.API/Controllers/ProductsController.cs" />
+      <File FileName="OmcSales.API/appsettings.json" />
+      <File FileName="OmcSales.API/Startup.cs" Line="26" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="OmcSales.API" expanded="True">
             <Node name="OmcSales.API" expanded="True">
-              <Node name="Models" expanded="True">
-                <Node name="ApplicationDbContext.cs" selected="True" />
-              </Node>
+              <Node name="Startup.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -23,8 +27,8 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/adriot/Desktop/Development/projects/Asp.net/WebApi/OmcSales.API/OmcSales.API/Controllers/StationsController.cs" relfile="OmcSales.API/Controllers/StationsController.cs" line="73" column="1" />
-      <Breakpoint file="/Users/adriot/Desktop/Development/projects/Asp.net/WebApi/OmcSales.API/OmcSales.API/Controllers/StationsController.cs" relfile="OmcSales.API/Controllers/StationsController.cs" line="165" column="1" />
+      <Breakpoint file="/Users/adriot/Desktop/Development/projects/Asp.net/WebApi/OmcSales.API/OmcSales.API/Controllers/StationsController.cs" relfile="OmcSales.API/Controllers/StationsController.cs" line="97" column="1" />
+      <Breakpoint file="/Users/adriot/Desktop/Development/projects/Asp.net/WebApi/OmcSales.API/OmcSales.API/Controllers/DailySalesController.cs" relfile="OmcSales.API/Controllers/DailySalesController.cs" line="74" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />

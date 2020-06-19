@@ -20,11 +20,14 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.1" />
     <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.1.1" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.6.0" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
     <Folder Include="Helpers\" />
     <Folder Include="Helpers\AutoMapper\" />
     <Folder Include="Helpers\DTOs\" />
+    <Folder Include="Helpers\Enums\" />
+    <Folder Include="Services\" />
   </ItemGroup>
 </Project>

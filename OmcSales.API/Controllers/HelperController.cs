@@ -21,7 +21,7 @@ namespace OmcSales.API.Controllers
         [HttpGet("productsfrombank")]
         public ActionResult<List<ProductBank>> GetProductsFromBank()
         {
-            return DbContext.ProductBank.ToList();
+            return DbContext.ProductBanks.ToList();
         }
     }
 }

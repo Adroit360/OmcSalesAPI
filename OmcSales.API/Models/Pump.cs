@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace OilBackend.Models
+namespace OmcSales.API.Models
 {
     public class Pump
     {
@@ -14,6 +14,7 @@ namespace OilBackend.Models
         }
 
         public int PumpId { get; set; }
+        public string PumpName { get; set; }
         public string AttendantName { get; set; }
 
         public int StationId { get; set; }
