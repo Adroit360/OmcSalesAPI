@@ -44,12 +44,12 @@ namespace OmcSales.API.Controllers
                     var firstOpening = (firstTankValue == null | firstTankValue?.Opening == 0) ? 1 : firstTankValue.Opening;
 
                     var lastTankValue = tank.Tankvalues.LastOrDefault();
-                    var lastClosing = lastTankValue == null  ? 1 : lastTankValue.Closing;
+                    var lastClosing = lastTankValue == null  ? 0 : lastTankValue.Closing;
 
-                    statisticsDTO.FuelPercentage = (lastClosing/firstOpening) * 100;
-                    statisticsDTO.LastUpdated = lastTankValue.Date;
+                    var percentage = (lastClosing / firstOpening) * 100;
+                    statisticsDTO.FuelPercentage = percentage > 100 ? 100 : percentage;
+                    statisticsDTO.LastUpdated = lastTankValue == null ? DateTime.Now : lastTankValue.Date;
                     statisticsDTO.FirstOpening = firstOpening;
-
                     statisticsDTO.LastClosing = lastClosing;
 
                     statisticsDTOs.Add(statisticsDTO);

@@ -25,12 +25,12 @@ namespace OmcSales.API
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddDbContext<ApplicationDbContext>(options =>
-              options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
-
-
             //services.AddDbContext<ApplicationDbContext>(options =>
-            //   options.UseSqlServer(Configuration.GetConnectionString("GearHost")));
+            //  options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
+
+
+            services.AddDbContext<ApplicationDbContext>(options =>
+               options.UseSqlServer(Configuration.GetConnectionString("GearHost")));
 
 
             services.AddDefaultIdentity<ApplicationUser>(options =>

@@ -79,7 +79,7 @@ namespace OmcSales.API.Controllers
         [HttpGet("dates/{stationId}")]
         public async Task<ActionResult<List<string>>> GetValuesDates(int stationId)
         {
-            var dates = DbContext.NozzleValues.Where(i => i.Nozzle.Pump.StationId == stationId).Select(i => i.Date.ToString("dddd, dd MMMM yyyy HH:mm:ss"));
+            var dates = DbContext.NozzleValues.Where(i => i.Nozzle.Pump.StationId == stationId).Select(i => i.Date.ToString("dddd, dd MMMM yyyy HH:mm:ss")).ToList().Distinct();
             return Ok(dates.ToList());
         }
 

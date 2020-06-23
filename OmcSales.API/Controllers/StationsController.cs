@@ -64,7 +64,7 @@ namespace OmcSales.API.Controllers
             var similarManagerEmail = await DbContext.FillingStations.AnyAsync(i => i.ManagerEmail.ToLower() == fillingStationDTO.ManagerEmail.ToLower());
             if (similarManagerEmail)
             {
-                return BadRequest($"The manager with id {fillingStationDTO.ManagerEmail} is already assigned a different station");
+                return BadRequest($"The manager with email {fillingStationDTO.ManagerEmail} is already assigned a different station");
             }
 
 
@@ -104,7 +104,7 @@ namespace OmcSales.API.Controllers
 
            
 
-            return Ok();
+            return Ok(fillingStation.FillingStationId);
         }
 
         [HttpPost("edit")]
@@ -169,10 +169,10 @@ namespace OmcSales.API.Controllers
                         }
                         catch (Exception ex) { }
                     }
-                    
+
                     //}
                     //catch { }
-
+                    DbContext.SaveChanges();
                 }
             }
 
